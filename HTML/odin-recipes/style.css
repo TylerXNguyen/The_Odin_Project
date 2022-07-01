@@ -1,0 +1,32 @@
+ .title {
+    font-size: 70px;
+    background-color: rgb(0, 63, 180);
+    color: rgb(230, 97, 36);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.subtitle,
+li,
+a {
+    font-size: 30px;
+    color:rgb(13, 39, 39);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.recipes.image {
+    height: 400px;
+    width: 100%;
+}
+
+.main.subtitle {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
