@@ -3,15 +3,18 @@
   color: hsl(0, 100%, 50%);
 }
 
-.small-para {
+.para.small-para {
   font-size: 14px;
+  font-weight: 100;
 }
 
 .para {
   font-size: 22px;
+  font-weight: bold;
 }
 
-.confirm {
+
+#confirm-button {
   background: green;
   color: white;
   font-weight: bold;
@@ -23,12 +26,14 @@
   font-size: 20px;
 }
 
-.child {
+div.text.child {
   color: red;
   font-size: 14px;
+  font-weight: 100;
 }
 
 div.text {
   color: green;
   font-size: 22px;
+  font-weight: bold;
 }
