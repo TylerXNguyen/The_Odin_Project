@@ -1,5 +1,4 @@
 // main
-const playerSelection = "rock";
 let rounds = 5
 console.log(game(rounds))
 
@@ -20,7 +19,6 @@ function computerPlay() {
 function playRound(playerSelection, computerSelection) {
     playerSelection = playerSelection.toLowerCase()
     playerSelection = capitalize(playerSelection)
-
     // checks for tie, same choice
     if (playerSelection == computerSelection) {
         console.log("It's a tie. You both chose:\t" + playerSelection)
@@ -54,11 +52,13 @@ function capitalize(s) {
 function game(rounds) {
     let player_wins = 0
     let computer_wins = 0
-    let computerSelection = computerPlay()
+    // runs rounds
     for (let i = 0; i < rounds; i++) {
         console.log("\n---Round " + (i + 1) + "---")
         // plays a round and updates score of winner
-        computerSelection = computerPlay()
+        let computerSelection = computerPlay()
+        // prompts user for input
+        let playerSelection = prompt("Rock, Paper, or Scissors? ")
         let round_winner = playRound(playerSelection, computerSelection);
         if (round_winner == 1) {
             player_wins++;
